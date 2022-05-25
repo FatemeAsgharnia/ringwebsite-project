@@ -1,0 +1,804 @@
+body{
+    margin:0
+}
+
+.center { display: flex;  justify-content: center;  align-items: center;  text-align: center}
+a:hover { text-decoration: none!important}
+ul { list-style: none;  padding: 0!important;  margin: 0!important}
+.row { margin-left: 0!important; margin-right: 0!important}
+input[type="email"]:focus , button[type="button"]:focus { outline: none!important; box-shadow: none!important}
+* { box-sizing: border-box}
+
+
+.main-container {
+    max-width: 1140px;
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+.down-svg {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transform: rotate(180deg);
+    width: 100%;
+    height: 20px
+}
+.top-svg {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -1px;
+    transform: rotate(0deg);
+    width: 100%;
+    height: 20px
+}
+
+/************************* top bar section css **************************/
+
+.topbar-bg { background-color:#fc7f6a }
+.topbar {
+    width: 1080px!important;
+    max-width: 90%!important
+}
+
+.top-bar-inner { 
+    padding: 7px 0;
+    align-items: center
+}
+
+.top-bar-inner span { 
+    font-family: Montserrat;
+    text-align:end; 
+    font-size: 10px;
+    color: #fff;  
+    text-transform: uppercase;
+    letter-spacing: 0.5px 
+}
+
+.top-bar-inner ul i {
+    font-size: 15px; 
+    color: #fff; 
+    padding-right: 13px; 
+    opacity: 0.4
+}
+
+.top-bar-inner ul i:hover { opacity: 1; transition: 0.4s}
+
+
+/**************************  navbar section css  **************************/
+
+nav {
+    background-color: #fff;
+    padding: 12px 130px 12px 135px!important
+}
+
+.navbar-brand img:hover { 
+    opacity: 0.6; 
+    transition: 0.5s 
+}
+
+.bars-color { color:#000000} 
+
+.nav-link {
+    font-family: Montserrat;
+    font-size: 11px;
+    color: #000000!important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 0.9px 0px 0px black 
+}
+
+.nav-link:hover {
+    color: #f99c8c!important; 
+    text-shadow: 0.9px 0px 0px #f99c8c;
+    transition: 0.5s!important
+}
+
+.nav-item { margin-right: 15px}
+.sticky-top { opacity: 0.95}
+
+.shrink-nav {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    min-height: 55px !important
+}
+
+
+/****************************************************/
+main {
+    position: relative;
+    height: fit-content;
+    background-color: white; 
+    z-index: 1;
+    margin-bottom: 506px
+}
+/**************************  cover section css  **************************/
+
+.cover {
+    position: relative;
+    background-image: url("pictures/cover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 650px
+}
+
+.cover-inner {
+    display: flex;
+    height: inherit; 
+    align-items: center 
+}
+
+.inner-text h2 {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: Montserrat;
+    color:#333;
+    margin-bottom: 20px
+}
+
+.inner-text p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #4a4a4a;
+    margin-bottom: 40px;
+    letter-spacing: -0.2px;
+}
+
+.shop-btn {
+    width: 180px;
+    height: 53px;
+    font-size: 13px;
+    font-weight: 800;
+    color: #efebeb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.Comon-featur-btns {
+    border: none;
+    border-radius: 50px!important;
+    background-color: #fc7f6a
+}
+
+.Comon-featur-btns:hover { 
+    background-color: #ef725d;   
+    transition: 0.5s
+}
+
+
+/**************************  popular-types-of-rings section css  **************************/
+
+.popular-types div { height:340px }
+
+.popular-types .col-6, .popular-types .col-lg-4 { 
+    padding-right: 10px!important;
+    padding-left: 10px!important
+}
+
+.type-area {
+    overflow: hidden;
+    position: relative 
+}
+
+.first-bg  { background: url(pictures/ethics-diamond.jpg) no-repeat center}
+.second-bg { background: url(pictures/ruby-ringsss.jpg) no-repeat center}
+.third-bg  { background: url(pictures/imageds.jpg) no-repeat center}
+.first-bg, .second-bg, .third-bg { background-size: cover}
+
+.shift {
+    -webkit-transition: all 1.3s;
+    -moz-transition: all 1.3s;
+    -o-transition: all 1.3s;
+    transition: all 1.3s
+}
+
+.type-area:hover .shift  , .type-area:focus .shift {
+    -ms-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15)
+}
+
+.shadow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(36, 35, 35, 0.541)
+}
+
+.inner-content {
+    position: absolute; 
+    top: 0;
+    width: 100%;
+    color: #fff;
+    padding:50px 30px 40px 30px ;
+}
+
+.inner-content h3 {
+    font-size:24px; 
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    font-family: Montserrat;
+    margin-bottom: 20px
+}
+
+.rings-btn {
+    padding: 11px 31px;
+    font-size: 14px; 
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.05em;
+    margin-bottom: 0px
+}
+
+.inner-content div { height: fit-content; margin-bottom: 21px }
+.inner-content p { font-size: 14px }
+
+
+/**************************  best rings section css  **************************/
+.best-rings {padding: 80px 0}
+
+.section-tit{
+    font-family: Montserrat;
+    color:#333;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+}
+
+.short-txt{
+    color: #8f8f8f;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.best-rings ul { padding-inline-start: 0!important}
+.ring-info:hover {
+    box-shadow: 0 0 10px 4px rgba(199, 195, 195, 0.274); 
+    transition: 0.6s
+}
+
+.ring-img-area {
+    position: relative;
+    height: 65%;
+    overflow: hidden;
+}
+
+.ring-text-area{ padding: 24px}
+
+.circle{
+    border-radius: 50%;
+    background-color: #fff; 
+    width: 40px; 
+    height: 40px;
+    box-shadow: 0 0 10px 4px rgba(199, 195, 195, 0.274);
+    font-size: 12px;
+    color:rgb(92, 91, 91)
+}
+
+.eye-area{
+    position: absolute;
+    top: 20px; 
+    right: 0; 
+    z-index: -1; 
+    opacity: 0; 
+    transition:0.3s, opacity 0.5s  
+}
+
+.heart-area{
+    position: absolute; 
+    top: 72px;  
+    right: 0;  
+    z-index: -1; 
+    opacity: 0; 
+    transition:0.7s, opacity 0.5s
+}
+
+.ring-info:hover .eye-area , .ring-info:hover .heart-area{ 
+    z-index: 1000; 
+    opacity: 1; 
+    padding-right:20px 
+}
+
+.product-type { 
+    font-style:italic;
+    font-size: 11px;  
+    color:#999
+}
+
+.circle:hover, .product-type:hover {
+    color:#fc7f6a; 
+    transition:.4s
+}
+
+.ring-name { font-size: 0}
+
+.ring-name > a, .ring-name >a:hover{   
+    font-size: 14px;
+    font-weight: 500;  
+    color: #333!important
+}
+
+.ring-price {
+    color:#57bf6d;  
+    font-size: 18px;  
+    margin:16px 0 12px 0
+}
+
+.star-rating {
+    font-size: 15px;
+    color: #f9ca63  
+}
+
+.hidden-squere{
+    position: absolute;   
+    left: 0;
+    bottom: -40px;
+    width: 100%;
+    height: 40px;
+    transition:0.7s;
+    background-color: #fc7f6a;
+    visibility: hidden;
+}
+
+.hidden-squere span {
+    font-size: 11px;
+    font-weight: 600; 
+    color: #fbfbfbfa;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    letter-spacing: 1px
+}
+
+.ring-info:hover .hidden-squere { 
+    bottom: 0; 
+    visibility: visible
+}
+
+
+/**************************  clients reviews section css  **************************/
+
+
+.clients-rev-bg {
+    background-image: url("pictures/Untitled-1.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:800px;
+    opacity: 0.65;
+}
+
+.clients-rev-area {
+    position: absolute;
+    top: 10%; 
+    width: 100%
+}
+
+.bg-shadow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(252, 252, 252, 0.479)
+}
+
+.quote {
+    font-size: 45px;
+    color: #fc7f6a
+}
+
+.client-content > p{
+    font-style: italic;
+    font-size: 13px;
+    color: #3e3c3c;
+    line-height: 23px
+}
+
+.client-content > i, .client-content p { margin-bottom: 30px }
+
+.client-name{
+    display: block;
+    color: #000000e3;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: Montserrat
+}
+
+.star-rate {
+   font-size: 16px;
+   color: #f2b01e
+}
+
+
+/**************************  other popular rings section css  **************************/
+.other-popular ul > .col-6 {padding:0 7px!important}
+.less-width { padding: 0 12px }
+
+.black-squere{
+    position:absolute;
+    left: 16px;
+    top: 18px;
+    width: 109px;
+    height: 27px;
+    background-color: rgba(0,0,0,0.8);
+    text-align:center
+}
+
+.black-squere span{
+    color:#fffc;
+    font-size: 11px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: sans-serif
+}
+
+
+/**************************  slider section css  **************************/
+
+.ring-slider{padding: 90px 0}
+
+.swiper-button{
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    color: #000000;
+}
+.card-body {
+    background-color: #f5f5f5;
+    height: 194px
+}
+.card-body > h2 > a { color:#000000 }
+
+.card-body > h2 { 
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: Montserrat;
+    margin: 0 0 10px
+ }
+
+.card-body i {
+    color: #ef725d;
+    margin-right:3px;
+    font-weight: 100;
+    font-size: 14px
+}
+
+.card-body ul span {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.6px
+}
+
+.card-body ul span a{ color: #4a4a4a}
+
+.card-body p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #4a4a4a
+    
+}
+
+.w-slider {max-width: 1140px}
+.mx-middle {margin: auto 24px}
+
+.learn-more a {
+    color:#282727;
+    font-family:sans-serif;
+    font-size:11px;  
+    font-weight: 600; 
+    letter-spacing: 1px;  
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+    padding-bottom: 3px
+}
+
+.learn-more a:hover {
+    color:#fc7f6a; 
+    transition:.4s;
+    border-bottom: 1px solid #fc7f6a
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center
+}
+
+.card {
+    border: none;
+    border-radius:0
+}
+
+
+/**************************  slider section css  **************************/
+
+.down-cover {
+    position: relative;
+    background-image: url("pictures/second-cover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 480px
+}
+
+.down-cover-inner h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-family: Montserrat;
+    color:#333;
+}
+
+.down-cover-inner p {
+    font-size: 14px;
+    line-height: 1.8s;
+    color: #4a4a4a;
+    margin: 38px 0 25px 0
+}
+
+
+/**************************  search section css  **************************/
+
+.search { padding: 80px 0}
+
+.em-input-con{
+    height: 48px;
+    border: 1px solid #ddd;
+    background-color: #fcfcfc
+}
+
+input[type=email] {
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+    border:none;
+    background-color: #fcfcfc
+}
+
+ .LETS-GO-btn {
+    font-size: 13px;
+    font-weight: 600;
+    color: #fffdfd;
+    text-transform: uppercase;  
+    letter-spacing: 1px;
+    background-color: #fc7f6a;
+    border: none;
+    border-radius: 3px!important;
+    width: 85PX;
+    height: 28px;
+    margin-left: 3px
+}
+
+.btn-pos {
+    align-items: center;
+    justify-content: end
+}
+
+.cursor { cursor: pointer }
+
+.custom-checkbox .custom-control-input~.custom-control-label::before {   
+    border-radius: 0
+}
+
+.custom-checkbox .custom-control-input:focus~.custom-control-label::before {
+    box-shadow:none; 
+    border: 1px solid #adb5bd!important
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    background-color:#fc7f6a;
+    border: 1px solid #fc7f6a!important
+}
+
+.custom-control-label {
+    cursor: pointer;
+    color: #443f3f;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding-top:4px
+}
+
+
+/**************************  footer section css  **************************/
+
+.footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%
+}
+
+.footer .frst-row {
+    padding: 27px 0;
+    background-color: #f4f5f7
+}
+
+.p-elemnt { padding-top: 13px; padding-bottom: 13px}
+
+.icon-area {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 27px;    
+    color: #fc7f6a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services {
+    font-size: 11.6px;
+    font-family: Montserrat;
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase; 
+    letter-spacing: 1.6px 
+}
+
+.condition{
+    font-size: 11.5px;
+    color: #000000;
+    font-family: Montserrat;
+    letter-spacing: -0.2px
+}
+
+.footer .scnd-row {
+    position: relative;
+    background-image: url("pictures/footer-img.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:325px
+}
+
+.footer .scnd-row-shadow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #222;
+    opacity: .9
+}
+
+.scnd-row-inner{
+    position: absolute;
+    top: 0; 
+    padding-top: 60px
+}
+
+.scnd-row-inner span{
+    color: #fff;
+    font-size: 15px;
+    font-style: italic;
+    letter-spacing: -0.5px
+}
+
+.scnd-row-inner .circls {
+	border: 2px solid #fff;
+	border-radius: 50%;
+	width: 53px;
+	height:53px;
+	z-index: 86;
+    margin-left: 12px;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 9px
+}
+
+.thrd-row {
+    width: 100%;
+    height: 42px
+}
+
+
+/**************************  make responsive  **************************/
+
+@media (max-width :768px){
+    /* top-bar prt */
+    .topbar { padding: 5px 0}
+    .topbar span { text-align:center} 
+    .topbar ul { justify-content: center}
+    /* cover prt */
+    .cover { height: 360px}
+    .inner-text { width: 70%}
+    .inner-text h2 { font-size: 29px} 
+    .shop-btn { width: 155px; height: 52px} 
+    /* clients review prt */
+    .clients-rev-bg {height: 1780px!important}
+    .clients-rev-area {top: 3%!important}
+    /* slider prt */
+    .w-slider {max-width: 95%} 
+    /* d-cover prt */ 
+    .down-cover { background-attachment: unset!important; background-position: center right!important}
+    .down-cover-inner p { margin: 46px 0 70px 0}
+    .down-cover-inner h2 { font-size: 26px}
+    /* */
+    .other-popular > ul > .col-6 { padding:0 15px!important}
+    .less-width { padding: 0 15px!important}   
+    .section-tit {font-size: 25px}
+}
+@media (max-width :992px)  and (min-width :769px){
+    .cover { height: 550px }
+    .inner-text h2 { font-size: 38px}  
+}  
+@media (max-width :890px){
+    .main-container {max-width: 95%!important}
+}
+@media (max-width:940px){
+    main {margin-bottom: 0}
+    .footer { position: relative!important} 
+}
+@media (max-width :992px){
+    .nav-item { padding: 9px 0;  border-bottom: 1px solid rgba(0, 0, 0, 0.062)}
+    .nav-item:last-of-type {border-bottom:none}
+    .nav-link  { letter-spacing: 0.5px}
+    .shop-count-cart { margin-right: 6px}
+    .scnd-row-inner img {
+        width: 195px;
+        height: 51px } 
+}
+@media (max-width:940px) and (min-width:768px){
+    .card-body {padding: 1.25rem 5px!important}
+    .card-body > h2 { 
+        font-size: 14px;
+        letter-spacing: -0.3px
+    }
+    .card-body > p {
+        font-size: 12px;
+        line-height: 1.6
+    }
+    .card-body i {
+        font-size: 13px
+    }
+}
+@media (max-width:840px) and (min-width:768px){
+    .mx-middle { margin: auto 8px}
+}
+@media (max-width:1300px) { .swiper-button {width: 40px} }
+@media (max-width:1015px) { .swiper-button {width: 30px} }  
+
+@media (max-width:1015px) and (min-width:941px){
+    .card-body > h2 { 
+        font-size: 15px
+    }
+    .card-body > p {
+        font-size: 12px;
+        line-height: 1.6
+    }
+    .card-body i {
+        font-size: 13px
+    }
+}
+@media (max-width:1230px){
+    nav {
+        padding-left: 5%!important;
+        padding-right: 4.3%!important
+        
+    }
+}
+@media (max-width: 1340px){ .less-width { padding: 0 7px!important } }
+@media (max-width: 1200px){ .less-width { padding:   0!important   } }
+@media (max-width:  740px){ .less-width { padding: 0 10px!important} }
+@media (max-width: 700px){  .less-width { padding: 0 7px!important } }
+@media (max-width: 650px){  .less-width { padding: 0 5px!important } }
+@media (max-width: 600px){  .less-width { padding:   0!important   } }
